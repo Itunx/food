@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button_A">click me</button>
+    <h1 id="heading_A"></h1>
+
+    <script>
+        const buttonA= document.querySelector('#button_A');
+        const headingA=document.querySelector('#heading_A');
+        buttonA.onclick=()=>{
+            const name=prompt('what is your name');
+            console.log(`welcome home${name}`);
+            headingA.textContent=`good ${name}`;
+        }
+        </script>
+</body>
+</html>
